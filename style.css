@@ -1,0 +1,93 @@
+body{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #2D3847;
+	background-size: cover;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.share-button{
+   text-transform: uppercase;
+   border: 2px solid #fff;
+   display: inline-block;
+	position: absolute;
+	overflow: hidden;
+	width: 178px;
+	height: 40px;
+	top: 50%;
+	left: 50%;
+	text-transform: uppercase;
+	font-size: 14px;
+	transform: translate(-50%, -50%);
+}
+.share-button a{
+   color: white;
+	font-size: 12px;
+   display: block;
+   text-decoration: none;
+   font-weight: bold;
+   letter-spacing: 1px;
+   line-height: 26px;
+   padding: 7px 13px 7px 13px;
+}
+.share-button > a:after{
+   font-family: FontAwesome;
+   font-size: 14px;
+   color: white;
+   content: "\f064";
+   margin-left: 10px;
+}
+.share-button > a:hover,
+.share-button > a:hover:after,
+.share-button .icon-wrapper ul li a:hover i{
+	color: #e4e9ea;
+}
+.share-button .icon-wrapper ul li:last-child a:hover i{
+	color: red;
+}
+.share-button .icon-wrapper{
+    position: absolute;
+    left: -286px;
+    top: 0;
+    width: 286px;
+}
+
+.share-button .icon-wrapper > a{
+    display: inline-block;
+}
+.share-button a.hidden{
+    display: none;
+}
+.share-button.active .icon-wrapper{
+    max-height: 40px;
+}
+.share-button .icon-wrapper ul{
+    padding-left: 0;
+    margin: 0;
+    height: 40px;
+}
+.share-button .icon-wrapper ul:after{
+    clear: both;   
+}
+.share-button .icon-wrapper ul li{
+    float: left;
+    display: inline-block;
+}
+.share-button .icon-wrapper ul li:last-child{
+    float: right;
+}
+.share-button .icon-wrapper ul li a i{
+    color: white;
+    font-size: 14px;
+}
+.share-button .icon-wrapper ul li:last-child a{
+    background-color: white;
+}
+.share-button .icon-wrapper ul li:last-child a i{
+    color: #2d3847;
+    position: relative;
+    left: 1px;
+}
